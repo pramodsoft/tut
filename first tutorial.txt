@@ -1,0 +1,1 @@
+intall xampp or wamp for getting apahce, php and mysql but xampp is better and working fine 
