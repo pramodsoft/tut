@@ -3,7 +3,8 @@
 
 <style>
 #main{
-margin:15px 10px;padding:15px 10px;
+margin:15px 10px;
+padding:15px 10px;
 background-color:#1FFFF0
 }
 
@@ -31,6 +32,13 @@ p{
 font-size:16px;
 }
 
+.section{
+background-color:#33FF11;
+padding-left:15px;
+box-shadow:1px 2px 1px #000000;
+box-radius:20px 20px;
+}
+
 
 </style>
 
@@ -40,43 +48,74 @@ font-size:16px;
 <h1 style="text-align:center;color:#782323">GIT TUTORIAL</h1>
 <pre>
 
+<div class="section">
 <h1>Download Git in window Computer</h1>
 <h2>https://git-scm.com/download/win</h2>
 <p>Go to next next and agree like normal software</p>
+</div>
+
+
 note: first add file to working area and then do any operation
 
+<div class="section">
+<p>Git has three stages</p>
+working Stage: which is normal working file in computer system
+Staging Stage: which is done my $git add .
+commit Stage: which is done by $git commit -m "my commitment"
+
+</div>
+
+<div class="section">
 <h2>$ git init</h2>
+<p>Command used for initiating git in this foler</p>
+</div>
 
 
-Command used for initiating git in this foler
-
-
+<div class="section">
 <h2>$ git status</h2>
+<p>Used to know the status of git</p>
+</div>
 
-Used to know the status of git
-
+<div class="section">
 <h2>$ git add .</h2>
+<p>Used to add all the file in folder to git staging</p>
+</div>
 
-Used to add all the file in folder to git staging
-
+<div class="section">
 <h2>$ git commit -m "First commit"</h2>
-To add comit mark used –m and put “mark indicator”
+<p>To add comit mark used –m and put “mark indicator”</p>
+</div>
+
+
+<div class="section">
+<h2>$git restore .</h2>
+<p>To restore all file to original position if not sending to staging area</p>
+</div>
 
 
 
-<h1>Command used to add user name and email to git config to know who are you</h1>
+
+<div class="section">
+<h2>Command used to add user name and email to git config to know who are you</h2>
 <h2>$ git config --global user.name "pramod kumar"</h2>
 <h2>$ git config --global user.email pramod.err@gmail.com</h2>
-
 
 <h3>$git config user.name</h3>
 <p>To know name in config of git</p>
 <h3>$git config user.email</h3>
 <p>To know email id of config</p>
+<h2>List of All config </h2>
+<h3>$git config --list </h3>
+</div>
 
+
+<div class="section">
 <h2>$ git log</h2>
 <p>To know the log of git file</p>
+<h2>$ git log --oneline</h2>
+To show all commit history in one line
 
+</div>
 
 :wq to save and exit from commit vm version of file
 
@@ -85,9 +124,7 @@ To add comit mark used –m and put “mark indicator”
 
 
 
-<h2>$ git log --oneline</h2>
-To show all commit history in one line
-
+<div class="section">
 <h2>$ git branch</h2>
 It is used to know the branch
 
@@ -100,12 +137,15 @@ it is used to make a branch
 
 <h1>To come to master branch</h1>
 <h2>$git checkout master</h2>
+</div>
 
+
+<div class="section">
 <h2>$git remote –v</h2>
 it is used to know the remove address filled in git
 
 <h1>To Add one remote repository</h1>
-<h3>$git remote url_nick_name url_of_git_repo</h3>
+<h3>$git remote add url_nick_name "url_of_git_repo" </h3>
 
 <h2>$git push bitbucket master</h2>
 <h3>to add match local data with remote reciprocity</h3>
@@ -113,13 +153,28 @@ it is used to know the remove address filled in git
 <h2>$git push -u bitbucket master</h2>
 <h3>to add match local data with remote reciprocity with local tracting</h3>
 
+<h2>$git push --force -u bitbucket master</h2>
+<p>To forcefully pushing local master branch to remote repository</p>
+
 <h2>$git pull bitbucket master</h2>
 <h3>to add match local data with remote reciprocity</h3>
+</div>
 
+<div class="section">
+<h2>Push all data to remote repository</h2>
+<h3> first $git push net master for push master branch only to remote repo where net is remote repo </h3>
+</div>
+
+<div class="section">
+<h2>Pull all data from remote repository</h2>
+<h3> first $git init then then use <u>$git fetch --all</u> then check all branch by $git branch then use <u>$git checkout master</u> </h3>
+</div>
+
+<div class="section">
 <h1>To marge mylocalbranch to master </h1>
 <h3>To  do so first $git checkout master i.e. go to master branch and then run local code </h3>
 <h2>$git merge mylocalbranch</h2>
-
+</div>
 
 <hr>
 
