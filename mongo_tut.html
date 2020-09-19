@@ -1,0 +1,68 @@
+<pre>
+<h1>mongodb commands</h1>
+npm i --s express@4.16.4 mongoose@5.3.4 express-handlebars@3.0.0 body-parser@1.18.3
+
+To install mongooes through npm command
+npm install mongooes --save
+
+use newdatabase;
+newdatabase is the databasename
+
+to change database:
+use database
+
+
+show dbs;
+Used to show the database
+
+
+db;
+Used to know in which database we are
+
+db.createCollection(“pramod”);
+where pramod is the collection name
+
+show collections
+used to show the list of collection in database
+
+db.prmaod.insert({"firstname":"pramod","class":"highschool"});
+used to insert data in pramod collections
+
+db.prmaod.find();
+know all the data in prmaod collection 
+db.users.find().pretty();
+gives all collections details in pretty way
+
+here collection “vinod” and update one first data name to india
+db.vinod.update({},{$set:{name:”india”}});
+**if $set in, name available, the it will be modified otherwise new property add with the same name 
+
+To update all the records with matching conditions
+db.vinod.updateMany({}, $set:{name:”india}});
+
+Remove all  the elements from vinod collections
+db.vinod.remove({})
+db.vinod.removeMany({})
+remove all the matching records
+
+remove with the name: pramod
+db.vinod.remove({name:”prmaod”});
+
+
+<b>mongodump</b>
+<p> it is used to make restore of database,it create dump folder which contain all the .bson formate
+</p>
+
+<b>db.dropDatabase()</b>
+<p> it is used to drop the particular database in which the working database is currently there
+
+</p>
+
+
+<b>mongorestore</b>
+<p>
+it is used to restore/synch the database as it is in dump folder
+</p>
+
+
+</pre>

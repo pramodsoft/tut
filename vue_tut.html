@@ -1,0 +1,134 @@
+<pre>
+<h1>To install google meterial design </h1>
+<p>
+npm i material-design-icons-iconfont --save
+
+</p>
+
+<h1>TO initialize vuetify in normal vue app </h1>
+<p> step 1: npm install vuetify --save </p>
+<p>
+import Vue from 'vue'
+import App from './App'
+
+import Vuetify from 'vuetify'
+import 'vuetify/dist/vuetify.min.css'
+
+Vue.use(Vuetify)
+
+Vue.config.productionTip = false
+
+/* eslint-disable no-new */
+new Vue({
+  el: '#app',
+  vuetify: new Vuetify(),
+ 
+  render:h=>h(App),
+  
+})
+
+</p>
+
+
+
+
+
+<h1>template for vue for vuetify side bar</h1>
+<p>vue init disjfa/vuetify-sidebar-template my_test_app</p>
+
+
+<h1>To install vue cli </h1>
+<p>npm install -g @vue/cli</p>
+
+<h1> create vue app </h1>
+
+<p> vue init webpack app_name </p>
+
+
+<h1> to create vuetify app </h1>
+
+<p> vue init vuetifyjs/webpack app_name </p>
+
+
+
+<p>npm install vuex axios --save</p>
+
+<h1>to install bootstrap in vue project</h1>
+<p>npm install bootstrap --save</p>
+
+
+
+
+
+<h1>To run npm vue server</h1>
+
+<dd>npm run serve</dd>
+<dl>to run npm server</dl>
+
+
+<dd>this.$store.commit("change_name1")</dd>
+<dl>this commit is used to run the mutation in store</dl>
+<dd>this.$store.dispach("change_name1") </dd>
+<dl>this commit is used to run the action in store</dl>
+
+<p>in module state  my be call by this.$store.state.modulename.state_property_to_be_called</p>
+
+
+<p>in <b>mutations </b> state is directionly call in function as function(state) and then use each and every property of state</p>
+
+<p>in <b>action</b> state is always called by {state} as function({state}) and then use each and every propert</p>
+<p>in <b>action</b> commi is always called by {commit} as function({commit}) and then use commit('myname') function name</p>
+
+<p> this mapState is used to access the state from different modules
+    ...mapState(
+    {mylove:(state)=>state.basic_store.mylove}), 
+}</p>
+
+
+<p>
+    const state = {
+        mylove:"i love my test"
+    }
+    const mutations={
+    
+        change_name1:function(state){
+            state.mylove="okokok"
+        }
+    
+    }
+    
+    const actions={
+        change_name2:function({commit}){
+            commit("change_name1")
+        }
+    }
+    
+    export default {
+        state,
+        mutations,
+        actions,
+        namespaced:true,
+    
+    }
+
+when namespaced:true is applied in particular module then module name is must to add in getters,setters,and actions
+*** in state module name is must to show but in getters,setters,actions and mutation, no need to indicate about modules
+computed:{
+    ...mapActions('basic_store',['change_name2']),
+    ...mapState(
+      {goodluck:(state)=>state.basic_store.mylove}), 
+  },
+
+
+</p>
+
+<h1>To install Vue in bootstrap</h1>
+
+<p>npm i bootstrap jquery popper.js --save</p>
+
+<h1>To install Vue Router in Vue</h1>
+
+<p>npm install vue-router --save </p>
+
+
+</pre>
